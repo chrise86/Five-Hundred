@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = Fivehundred::VERSION
   s.authors     = ["Chris Edwards"]
   s.email       = ["chris@leopipadesigns.co.uk"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "http://www.leopipa.co.uk"
+  s.summary     = %q{Rails custom error handling}
+  s.description = %q{Catches rails errors and redirects to a custom error page that fits with your app.}
 
   s.rubyforge_project = "fivehundred"
 
