@@ -2,7 +2,7 @@ ApplicationController.class_eval do
 
 	around_filter :catch_not_found
 
-	unless ActionController::Base.consider_all_requests_local
+	unless config.consider_all_requests_local
 	    rescue_from Exception, :with => :render_error
 	    rescue_from ActiveRecord::RecordNotFound, :with => :render_not_found
 	    rescue_from ActionController::RoutingError, :with => :render_not_found
